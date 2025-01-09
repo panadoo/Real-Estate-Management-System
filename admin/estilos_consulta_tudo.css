@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.imovel {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.imovel img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.preco-size {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.descricao {
+    margin-top: 10px;
+    word-wrap: break-word;
+}
+
+.caracteristicas-especificas {
+    margin-top: 20px;
+}
+
+.caracteristicas-especificas h3 {
+    margin-top: 0;
+}
+
+.caracteristicas-especificas ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.caracteristicas-especificas ul li {
+    margin-bottom: 5px;
+}
+
+.caracteristicas-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.caracteristicas-esquerda,
+.caracteristicas-direita {
+    flex: 1;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.caracteristicas-esquerda li,
+.caracteristicas-direita li {
+    margin-bottom: 5px;
+}
+
+/* Estilo para o botão retornar ao topo */
+#btnTopo {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    z-index: 999;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 100%;
+    
+    transition: opacity 0.7s;
+}
+
+#btnTopo:hover {
+    opacity: 0.7;
+}

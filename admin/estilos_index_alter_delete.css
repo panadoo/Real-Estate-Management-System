@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto; /* Permite que os contêineres quebrem para a próxima linha conforme necessário */
+}
+
+.imovel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    height: 200px;
+}
+
+.imovel img {
+    width: 300px; /* Defina o tamanho desejado para a largura */
+    height: 200px; /* Defina o tamanho desejado para a altura */
+    margin-right: 20px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.link-preto {
+    text-decoration: none;
+    margin-top: 0;
+    font-size:16px;
+    color: #145BC7;
+}
+
+.link-preto:hover {
+    color: #9902bebb;
+    text-decoration: underline;
+}
+
+.titulo {
+    margin-top: 0;
+    font-size: 16px;
+    color: #145BC7;
+}
+
+.preco-size {
+    font-size: 22px;
+}
+
+.descricao {
+    color: #666666;
+}
+
+.info {
+    flex: 1;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+.p1 {
+    color: black;
+}
+
+.botao-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.botao {
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block; /* Alterado para block para ocupar a largura total */
+    margin-top: 27%;
+    width: 70px;
+    transition: background-color 0.3s;
+    margin-bottom: 45%;
+}
+
+.botao-eliminar {
+    background-color: #FF0000; /* Vermelho */
+}
+
+.botao-eliminar:hover {
+    background-color: #BA0808;
+}
+
+.botao-editar {
+    background-color: #145BC7; /* Vermelho */
+}
+
+.botao-editar:hover {
+    background-color: #0d3d76;
+}
+#btnTopo {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    z-index: 999;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 100%;
+    
+    transition: opacity 0.7s;
+}
+
+#btnTopo:hover {
+    opacity: 0.7;
+}

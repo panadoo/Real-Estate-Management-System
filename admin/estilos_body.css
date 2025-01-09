@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.title1 {
+    text-align: center;
+}
+
+/* Estilo básico para a barra de navegação */
+.ul1 {
+    list-style-type: none;
+    margin: 20px auto; /* Adiciona margem na parte superior */
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+    max-width: 543px;
+    min-width: 543px;
+    border-radius: 10px; /* Adiciona um raio de borda para tornar os cantos redondos */
+    display: flex; /* Usa flexbox para posicionar os itens */
+    justify-content: space-between; /* Distribui os itens igualmente ao longo do contêiner */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+.li1 {
+    display: inline-block;
+}
+
+.li1 a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+}
+
+.li1 a:hover {
+    background-color: #111;
+}
+
+.h1 {
+    text-align: center;
+}
+
+.dropdown {
+    display: inline-block;
+    min-width: 40px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 100px; /* Aumenta a largura mínima */
+    z-index: 1;
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    overflow: hidden; /* Garante que os itens dentro tenham cantos arredondados */
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 14px 16px; /* Ajusta o padding para ser consistente com os outros itens */
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border-radius: 0; /* Remove o arredondamento individual dos itens */
+}
+
+.dropdown-content a:first-child {
+    border-radius: 10px 10px 0 0; /* Bordas arredondadas no topo */
+}
+
+.dropdown-content a:last-child {
+    border-radius: 0 0 10px 10px; /* Bordas arredondadas na base */
+}
+
+.dropdown-content a:hover {
+    background-color: #111;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilizando o menu de navegação central */
+.centered {
+    flex-grow: 1; /* Faz com que o elemento preencha o espaço disponível */
+    text-align: center; /* Alinha o texto ao centro */
+}
